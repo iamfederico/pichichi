@@ -556,12 +556,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /* --- header ani ------------------------------------------------ */ 
 
 .cbp-af-header {
@@ -720,6 +714,17 @@ body {
 	height: 570px;
 }
 
+
+#contactwrapper {
+	width: 100%;
+	position:relative;
+	border-bottom: 2px solid #EEE;
+	border-top: 2px solid #EEE;
+	background-color: #F9F9F9;
+	height: 600px;
+}
+
+
 #contact {
 	line-height: 32px;
 	height: 500px;
@@ -727,7 +732,18 @@ body {
 	margin-bottom: 70px;
 	padding-left: 13%;
 	background-color: #F9F9F9;
-	float: left;	
+	float: left;
+}
+
+
+#map {
+	float: left;
+	height: 425px;
+	width: 425px;
+	margin-top: 83px;
+	margin-left: 150px;
+	line-height: 32px;
+	background-image: url('../images/map.png');	
 }
 
 
@@ -819,6 +835,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     color: rgb(68, 68, 68);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
+
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
     border: 1px solid rgb(204, 204, 204);
     padding: 13px 13px;
@@ -901,6 +918,13 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
         width: -webkit-calc(100% / 5);
         width: calc(100% / 5);
     }
+	
+	#content {
+	line-height: 32px;
+	text-align: center;
+	height: 770px;
+	}
+	
 }
  
 @media screen and (max-width: 945px) {
@@ -909,6 +933,13 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
         width: -webkit-calc(100% / 4);
         width: calc(100% / 4);
     }
+	
+	#content {
+	line-height: 32px;
+	text-align: center;
+	height: 670px;
+	}
+	#map {display: none;}
 }
  
 @media screen and (max-width: 660px) {
@@ -917,6 +948,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
         width: -webkit-calc(100% / 3);
         width: calc(100% / 3);
     }
+	
+	
 }
  
 @media screen and (max-width: 660px) {
@@ -925,6 +958,14 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
         width: -webkit-calc(100% / 3);
         width: calc(100% / 3);
     }
+	
+	#content {
+	line-height: 32px;
+	text-align: center;
+	height: 770px;
+	}
+	
+	#map {display: none;}
 }
  
 @media screen and (max-width: 400px) {
@@ -933,12 +974,81 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
         width: -webkit-calc(100% / 2);
         width: calc(100% / 2);
     }
+	
+	#content {
+	line-height: 32px;
+	text-align: center;
+	height: 770px;
+	}
+	
+	footer {text-align: center;	margin-bottom: 70px; clear: both;}
+
+	#footersocial li {display: inline-block; font-size: 18px; padding: 23px;}
+	
+	input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 13px 13px;
+    outline: medium none;
+    /*border-radius: 2px 2px 2px 2px;*/
+    color: rgb(119, 119, 119);
+    margin: 0px 0px 20px;
+    width: 210px;
+    max-width: 100%;
+    display: block;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	}
+	
 }
  
 @media screen and (max-width: 300px) {
     .cbp-rfgrid li {
         width: 100%;
     }
+	
+	
+
+	#content {
+	line-height: 32px;
+	text-align: center;
+	height: 1900px;
+	}
+	
+	#contactwrapper {
+	width: 100%;
+	position:relative;
+	border-bottom: 2px solid #EEE;
+	border-top: 2px solid #EEE;
+	background-color: #F9F9F9;
+	height: 600px;
+	}
+
+	#contact {
+	line-height: 32px;
+	height: 500px;
+	padding-top: 83px;
+	margin-bottom: 70px;
+	padding-left: 13%;
+	background-color: #F9F9F9;
+	float: left;
+
+	}
+	
+	footer {text-align: center;	margin-bottom: 70px; clear: both;}
+
+	#footersocial li {display: inline-block; font-size: 16px; padding: 23px;}
+	
+	input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 13px 13px;
+    outline: medium none;
+    /*border-radius: 2px 2px 2px 2px;*/
+    color: rgb(119, 119, 119);
+    margin: 0px 0px 20px;
+    width: 180px;
+    max-width: 100%;
+    display: block;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	}
 }
 
 
@@ -1047,6 +1157,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 /* ===============
     Maximal Width
    =============== */
+   
+   
 
 }
 
