@@ -537,19 +537,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 	font-family: 'Roboto', 'Roboto Slab', serif, 'Roboto', sans-serif;
@@ -925,6 +912,16 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	height: 770px;
 	}
 	
+	#map {
+	float: left;
+	height: 425px;
+	width: 325px;
+	margin-top: 83px;
+	margin-left: 90px;
+	line-height: 32px;
+	background-image: url('../images/map.png');	
+}
+	
 }
  
 @media screen and (max-width: 945px) {
@@ -939,18 +936,70 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	text-align: center;
 	height: 670px;
 	}
+	
 	#map {display: none;}
+	
+	#intro {
+	padding-top: 100px;
+	margin: 70px;
+	line-height: 46px;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 300;
+	}
+	
+	.cbp-af-header {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	z-index: 10000;
+	height: 130px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+	border-bottom: 2px solid #EEE;
 }
- 
-@media screen and (max-width: 660px) {
-    .cbp-rfgrid li {
-        width: 33.3333333%; /* Fallback */
-        width: -webkit-calc(100% / 3);
-        width: calc(100% / 3);
-    }
+
+.cbp-af-header .cbp-af-inner {
+	width: 270px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cbp-af-header h1 {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 3.5em;
+	line-height: 125px;
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+
+/* Transitions and class for reduced height */
+.cbp-af-header h1 {-webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;}
+
+.cbp-af-header.cbp-af-header-shrink {height: 90px;}
+
+.cbp-af-header.cbp-af-header-shrink h1 {line-height: 90px;}
+
+.cbp-af-header.cbp-af-header-shrink h1 {font-size: 2em;}
 	
 	
+	
+	
+	
+	
+	
 }
+
+
+
  
 @media screen and (max-width: 660px) {
     .cbp-rfgrid li {
@@ -966,20 +1015,66 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	}
 	
 	#map {display: none;}
+	
+	
+	#intro {
+	padding-top: 100px;
+	margin: 70px;
+	line-height: 46px;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 300;
+	}
+
+	
+	.cbp-af-header {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	z-index: 10000;
+	height: 120px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+	border-bottom: 2px solid #EEE;
+}
+
+.cbp-af-header .cbp-af-inner {
+	width: 240px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cbp-af-header h1 {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 3em;
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+
+/* Transitions and class for reduced height */
+.cbp-af-header h1 {-webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;}
+
+.cbp-af-header.cbp-af-header-shrink {height: 90px;}
+
+.cbp-af-header.cbp-af-header-shrink h1 {line-height: 90px;}
+
+.cbp-af-header.cbp-af-header-shrink h1 {font-size: 2em;}
+	
 }
  
 @media screen and (max-width: 400px) {
-    .cbp-rfgrid li {
-        width: 50%; /* Fallback */
-        width: -webkit-calc(100% / 2);
-        width: calc(100% / 2);
+    .cbp-rfgrid li {width: 50%; /* Fallback */width: -webkit-calc(100% / 2);width: calc(100% / 2);
     }
 	
-	#content {
-	line-height: 32px;
-	text-align: center;
-	height: 770px;
-	}
+	#content {line-height: 32px;text-align: center;height: 710px;}
 	
 	footer {text-align: center;	margin-bottom: 70px; clear: both;}
 
@@ -997,6 +1092,70 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     display: block;
     background: none repeat scroll 0% 0% rgb(255, 255, 255);
 	}
+	
+	.cbp-rfgrid li a div h3 {
+    width: 100%;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+	text-align: center;
+	font-weight: 400;
+	}
+	
+	
+	#intro {
+	padding-top: 90px;
+	margin: 52px;
+	line-height: 29px;
+	text-align: center;
+	font-size: 19px;
+	font-weight: 300;
+	}
+	
+	
+	.cbp-af-header {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	z-index: 10000;
+	height: 110px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+	border-bottom: 1px solid #EEE;
+}
+
+.cbp-af-header .cbp-af-inner {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cbp-af-header h1 {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 2.5em;
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+
+/* Transitions and class for reduced height */
+.cbp-af-header h1 {-webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;}
+
+.cbp-af-header.cbp-af-header-shrink {height: 90px;}
+
+.cbp-af-header.cbp-af-header-shrink h1 {line-height: 90px;}
+
+.cbp-af-header.cbp-af-header-shrink h1 {font-size: 2em;}
+
+
 	
 }
  
@@ -1049,6 +1208,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     display: block;
     background: none repeat scroll 0% 0% rgb(255, 255, 255);
 	}
+
+
 }
 
 
